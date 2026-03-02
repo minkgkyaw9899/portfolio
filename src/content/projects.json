@@ -1,0 +1,140 @@
+[
+  {
+    "slug": "fpb-banking-suite",
+    "name": "FPB Banking Suite",
+    "domain": "Fintech",
+    "summary": "Secure mobile banking experience focused on transaction safety, regulatory workflows, and reliable offline-friendly states.",
+    "role": "Lead Mobile Developer (React Native CLI)",
+    "stack": ["React Native", "TypeScript", "Redux", "Secure Storage"],
+    "challenges": [
+      "Hardened authentication flows and sensitive data handling",
+      "Complex state management across multi-step financial journeys",
+      "Performance tuning for low-end devices"
+    ],
+    "outcomes": [
+      "Improved session stability for high-frequency users",
+      "Reduced crash rate through safer state transitions"
+    ],
+    "image": "/projects/placeholder.svg",
+    "featured": true
+  },
+  {
+    "slug": "smedb-banking-suite",
+    "name": "SMEDB Banking Suite",
+    "domain": "Fintech",
+    "summary": "SME-focused banking tools with secure onboarding and transparent transaction histories.",
+    "role": "Mobile Developer (React Native CLI)",
+    "stack": ["React Native", "TypeScript", "Context API", "Biometrics"],
+    "challenges": [
+      "Secure onboarding with identity verification",
+      "State synchronization for transaction feeds"
+    ],
+    "outcomes": [
+      "Delivered consistent transaction UX across devices"
+    ],
+    "image": "/projects/placeholder.svg",
+    "featured": true
+  },
+  {
+    "slug": "plus-financial-platform",
+    "name": "Plus Financial Platform",
+    "domain": "Fintech",
+    "summary": "Cross-platform benefits platform connecting end-users and administrators.",
+    "role": "Mobile + Web Engineer (React Native + Next.js)",
+    "stack": ["React Native", "Next.js", "TypeScript", "REST APIs"],
+    "challenges": [
+      "Unified experience across mobile and web properties",
+      "Consistent data contracts between apps"
+    ],
+    "outcomes": [
+      "Streamlined platform delivery for end-users and admins"
+    ],
+    "image": "/projects/placeholder.svg",
+    "featured": true
+  },
+  {
+    "slug": "plus-admin-portal",
+    "name": "Plus Admin Portal",
+    "domain": "Enterprise",
+    "summary": "Admin workflows for managing benefits, users, and approvals with strong performance and SEO.",
+    "role": "Frontend Engineer (Next.js)",
+    "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Data Tables"],
+    "challenges": [
+      "Admin-level data visibility and access control",
+      "Scalable UI for heavy datasets"
+    ],
+    "outcomes": [
+      "Improved operational workflows for administrators"
+    ],
+    "image": "/projects/placeholder.svg",
+    "featured": true
+  },
+  {
+    "slug": "hr-hive",
+    "name": "HR Hive",
+    "domain": "Enterprise",
+    "summary": "Geofencing-based HR suite to manage attendance and field employee activity.",
+    "role": "Mobile Engineer (Expo)",
+    "stack": ["Expo", "React Native", "Location Services"],
+    "challenges": [
+      "Reliable geofencing on diverse devices",
+      "Battery-aware background tracking"
+    ],
+    "outcomes": [
+      "Higher accuracy for field attendance tracking"
+    ],
+    "image": "/projects/placeholder.svg",
+    "featured": false
+  },
+  {
+    "slug": "oil-factory-management",
+    "name": "Oil Factory Management",
+    "domain": "Enterprise",
+    "summary": "Operations management system for industrial workflows and reporting.",
+    "role": "Frontend Engineer (React) + API Collaboration (Laravel)",
+    "stack": ["React", "Laravel", "PostgreSQL"],
+    "challenges": [
+      "Complex data visualization and reporting",
+      "Workflow automation for operational teams"
+    ],
+    "outcomes": [
+      "Reduced manual reporting efforts"
+    ],
+    "image": "/projects/placeholder.svg",
+    "featured": false
+  },
+  {
+    "slug": "alpha-learn",
+    "name": "Alpha Learn",
+    "domain": "LMS",
+    "summary": "Learning management system focused on structured lessons and student progress.",
+    "role": "Frontend Engineer",
+    "stack": ["React", "TypeScript", "Education Analytics"],
+    "challenges": [
+      "Progress tracking across curricula",
+      "Engagement-focused UX"
+    ],
+    "outcomes": [
+      "Improved learner retention via better progress visibility"
+    ],
+    "image": "/projects/placeholder.svg",
+    "featured": true
+  },
+  {
+    "slug": "breeze-ticketing",
+    "name": "Breeze Ticketing",
+    "domain": "Events",
+    "summary": "Ticketing platform with fast check-in workflows for live events.",
+    "role": "Frontend Engineer",
+    "stack": ["React", "Node.js", "Realtime Updates"],
+    "challenges": [
+      "High-concurrency check-in scenarios",
+      "Real-time update delivery"
+    ],
+    "outcomes": [
+      "Reduced queue times during peak check-in"
+    ],
+    "image": "/projects/placeholder.svg",
+    "featured": false
+  }
+]

@@ -1,0 +1,18 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#111113" />
+  <rect x="80" y="80" width="1040" height="640" rx="32" fill="#18181B" stroke="#27272A" stroke-width="2" />
+  <path d="M140 240H1060" stroke="#27272A" stroke-width="2" stroke-linecap="round" />
+  <circle cx="160" cy="200" r="10" fill="#27272A" />
+  <circle cx="200" cy="200" r="10" fill="#27272A" />
+  <circle cx="240" cy="200" r="10" fill="#27272A" />
+  <rect x="140" y="280" width="520" height="24" rx="12" fill="#27272A" />
+  <rect x="140" y="330" width="720" height="20" rx="10" fill="#1F1F23" />
+  <rect x="140" y="370" width="680" height="20" rx="10" fill="#1F1F23" />
+  <rect x="140" y="410" width="520" height="20" rx="10" fill="#1F1F23" />
+  <rect x="140" y="470" width="280" height="44" rx="22" fill="#27272A" />
+  <rect x="460" y="470" width="240" height="44" rx="22" fill="#1F1F23" />
+  <rect x="720" y="470" width="260" height="44" rx="22" fill="#1F1F23" />
+  <rect x="140" y="560" width="920" height="120" rx="20" fill="#0F0F12" stroke="#1F1F23" stroke-width="2" />
+  <text x="140" y="620" fill="#A1A1AA" font-family="Arial, Helvetica, sans-serif" font-size="28">Project Visual Placeholder</text>
+  <text x="140" y="660" fill="#71717A" font-family="Arial, Helvetica, sans-serif" font-size="18">Replace with product screenshots when available.</text>
+</svg>

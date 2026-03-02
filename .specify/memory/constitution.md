@@ -21,7 +21,7 @@ All pages must be mobile-first and fully responsive. Use Framer Motion for subtl
 TypeScript strict mode must remain enabled. Write basic unit tests for utility functions, and ensure `tsc` reports zero errors before merging.
 
 ## Development Workflow
-Prefer small, focused components and utilities. Keep Tailwind class usage consistent with the spacing system and extract reusable patterns into components or utilities when repeated.
+Prefer small, focused components and utilities. Keep Tailwind class usage consistent with the spacing system and extract reusable patterns into components or utilities when repeated. Use Bun as the package manager for installs and scripts.
 
 ## Governance
 This constitution supersedes other project guidance. Changes require documentation of the rationale and impact, and must be reflected in project docs or templates.

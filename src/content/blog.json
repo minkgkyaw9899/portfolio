@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "golang-foundations",
+    "title": "Golang Foundations",
+    "date": "2026-02-01",
+    "summary": "Learning the language basics, tooling, and idiomatic patterns.",
+    "tags": ["Go", "Learning"],
+    "status": "In Progress"
+  },
+  {
+    "slug": "building-apis-in-go",
+    "title": "Building APIs in Go",
+    "date": "2026-02-15",
+    "summary": "Exploring routing, middleware, and data modeling for production services.",
+    "tags": ["Go", "Backend"],
+    "status": "Planned"
+  },
+  {
+    "slug": "concurrency-and-performance",
+    "title": "Concurrency and Performance",
+    "date": "2026-03-01",
+    "summary": "Hands-on experiments with goroutines, channels, and profiling.",
+    "tags": ["Go", "Performance"],
+    "status": "Planned"
+  }
+]
