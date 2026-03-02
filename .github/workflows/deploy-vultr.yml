@@ -56,6 +56,7 @@ jobs:
             docker image prune -f
             docker run -d \
               --name portfolio \
+              --network host \
               --restart unless-stopped \
               -p 3000:3000 \
               ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
