@@ -1,0 +1,6 @@
+<svg width="288" height="288" viewBox="0 0 288 288" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="288" height="288" fill="#18181B" stroke="#27272A" stroke-width="2" />
+  <circle cx="144" cy="100" r="50" fill="#27272A" />
+  <ellipse cx="144" cy="220" rx="90" ry="70" fill="#27272A" />
+  <text x="144" y="260" fill="#52525B" font-family="system-ui" font-size="12" text-anchor="middle">Add photo.jpg</text>
+</svg>

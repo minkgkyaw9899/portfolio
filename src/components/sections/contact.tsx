@@ -18,13 +18,29 @@ export const Contact = () => (
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-4">
           <a
-            href="mailto:minkaung@example.com"
+            href="mailto:minkaungkyaw9899@gmail.com"
             className="rounded-full bg-orange-400 px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-orange-300"
           >
             Email me
           </a>
           <a
-            href="https://www.linkedin.com"
+            href="tel:+959762637636"
+            className="rounded-full border border-zinc-700 px-6 py-3 text-sm font-semibold text-zinc-100 transition hover:border-zinc-500"
+          >
+            +95 9 762637636
+          </a>
+          <a
+            href="https://github.com/minkgkyaw9899"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-zinc-700 px-6 py-3 text-sm font-semibold text-zinc-100 transition hover:border-zinc-500"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/minkaungkyaw/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full border border-zinc-700 px-6 py-3 text-sm font-semibold text-zinc-100 transition hover:border-zinc-500"
           >
             LinkedIn

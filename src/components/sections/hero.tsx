@@ -1,45 +1,77 @@
 "use client";
 
+import Image from "next/image";
+import { useState } from "react";
 import { FadeIn } from "@/components/ui/fade-in";
+
+// Add your photo as public/photo.jpg to display it here
+const HeroImage = () => {
+  const [usePlaceholder, setUsePlaceholder] = useState(false);
+  return (
+    <div className="relative h-64 w-64 shrink-0 overflow-hidden rounded-2xl border border-zinc-800/70 bg-zinc-900/60 lg:h-80 lg:w-80">
+      {usePlaceholder ? (
+        <div className="flex h-full w-full items-center justify-center bg-zinc-800/50 text-zinc-500">
+          <span className="text-center text-xs">Add photo.jpg</span>
+        </div>
+      ) : (
+        <Image
+          src="/hero.png"
+          alt="Minkaung Kyaw"
+          fill
+          className="object-cover object-top"
+          priority
+          sizes="(max-width: 1024px) 256px, 320px"
+          onError={() => setUsePlaceholder(true)}
+        />
+      )}
+    </div>
+  );
+};
 
 export const Hero = () => (
   <section className="space-y-10 pt-24" id="home">
-    <FadeIn>
-      <div className="inline-flex items-center gap-3 rounded-full border border-zinc-800/70 bg-zinc-900/60 px-4 py-2 text-xs uppercase tracking-[0.35em] text-zinc-400">
-        <span className="h-2 w-2 rounded-full bg-orange-400" />
-        Fullstack Engineer · Mobile Specialist
+    <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
+      <div className="space-y-10">
+        <FadeIn>
+          <div className="inline-flex items-center gap-3 rounded-full border border-zinc-800/70 bg-zinc-900/60 px-4 py-2 text-xs uppercase tracking-[0.35em] text-zinc-400">
+            <span className="h-2 w-2 shrink-0 rounded-full bg-orange-400" />
+            <span>Fullstack Engineer · Mobile Specialist</span>
+          </div>
+        </FadeIn>
+        <FadeIn delay={0.05}>
+          <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-zinc-50 sm:text-5xl lg:text-6xl">
+            Fullstack Developer with deep{" "}
+            <span className="text-orange-300">Mobile expertise</span>, bridging
+            React Native systems with modern web.
+          </h1>
+        </FadeIn>
+        <FadeIn delay={0.1}>
+          <p className="max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg">
+            Currently at Yoma Fleet, building the Plus platform—a benefits and
+            financial product for end-users and administrators.
+          </p>
+        </FadeIn>
+        <FadeIn delay={0.15}>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              className="rounded-full bg-orange-400 px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-orange-300"
+            >
+              View case studies
+            </a>
+            <a
+              href="#learning"
+              className="rounded-full border border-zinc-700 px-6 py-3 text-sm font-semibold text-zinc-100 transition hover:border-zinc-500"
+            >
+              Go learning path
+            </a>
+          </div>
+        </FadeIn>
       </div>
-    </FadeIn>
-    <FadeIn delay={0.05}>
-      <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-zinc-50 sm:text-5xl lg:text-6xl">
-        Fullstack Developer with deep{" "}
-        <span className="text-orange-300">Mobile expertise</span>, bridging
-        React Native systems with modern web and Go backends.
-      </h1>
-    </FadeIn>
-    <FadeIn delay={0.1}>
-      <p className="max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg">
-        Currently at Yoma Fleet, transitioning from specialized mobile
-        development into fullstack delivery across Fintech, LMS, and Enterprise
-        platforms.
-      </p>
-    </FadeIn>
-    <FadeIn delay={0.15}>
-      <div className="flex flex-wrap gap-4">
-        <a
-          href="#projects"
-          className="rounded-full bg-orange-400 px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-orange-300"
-        >
-          View case studies
-        </a>
-        <a
-          href="#learning"
-          className="rounded-full border border-zinc-700 px-6 py-3 text-sm font-semibold text-zinc-100 transition hover:border-zinc-500"
-        >
-          Go learning path
-        </a>
-      </div>
-    </FadeIn>
+      <FadeIn delay={0.1}>
+        <HeroImage />
+      </FadeIn>
+    </div>
     <FadeIn delay={0.2}>
       <div className="grid gap-4 rounded-2xl border border-zinc-800/70 bg-zinc-900/40 p-6 text-sm text-zinc-400 sm:grid-cols-3">
         <div className="space-y-2">

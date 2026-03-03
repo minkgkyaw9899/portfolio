@@ -12,6 +12,12 @@ export type Project = {
   outcomes: string[];
   image: string;
   featured: boolean;
+  /** When false, project is shown as app store listing (not case study) */
+  isCaseStudy?: boolean;
+  /** Company where the project was built */
+  company?: string;
+  /** App store links for published apps (non-case-study projects) */
+  appStoreLinks?: { android?: string; ios?: string };
 };
 
 export type BlogPost = {
@@ -30,6 +36,12 @@ export const getProjects = () => projects;
 
 export const getFeaturedProjects = () =>
   projects.filter((project) => project.featured);
+
+export const getCaseStudyProjects = () =>
+  projects.filter((p) => p.featured && p.isCaseStudy !== false);
+
+export const getAppStoreProjects = () =>
+  projects.filter((p) => p.featured && p.isCaseStudy === false);
 
 export const getProjectBySlug = (slug: string) =>
   projects.find((project) => project.slug === slug);
