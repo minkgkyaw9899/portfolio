@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "ပင်မ",
+    "about": "အကြောင်းအရာ",
+    "experience": "အတွေ့အကြုံ",
+    "projects": "ပရောဂျက်များ",
+    "stack": "နည်းပညာ",
+    "contact": "ဆက်သွယ်ရန်",
+    "letsTalk": "ဆွေးနွေးကြစို့"
+  },
+  "hero": {
+    "badge": "အလုပ်ရနိုင်ပါသည်",
+    "roles": [
+      "Fullstack Engineer",
+      "Mobile ကျွမ်းကျင်သူ",
+      "React Native ကျွမ်းကျင်သူ",
+      "Frontend Developer"
+    ],
+    "headline1": "ဒီဂျစ်တယ်",
+    "headline2": "အတွေ့အကြုံများ",
+    "headline3": "တည်ဆောက်နေသည်",
+    "description": "နှစ် {experience}+ မုဘိုင်းနှင့် ဝက်ဘ် application များ ဖန်တီးနေသူ။ Fintech, Enterprise နှင့် Education နယ်ပယ်တွင် အတွေ့အကြုံ ရှိသည်။ လက်ရှိ {company} တွင် Plus+ platform တည်ဆောက်နေသည်။",
+    "cta_primary": "ပရောဂျက်များ ကြည့်ရန်",
+    "cta_secondary": "ဆက်သွယ်ရန်",
+    "stats": {
+      "years": "နှစ် အတွေ့အကြုံ",
+      "projects": "ပရောဂျက်များ",
+      "companies": "ကုမ္ပဏီများ",
+      "technologies": "နည်းပညာများ"
+    }
+  },
+  "about": {
+    "label": "အကြောင်းအရာ",
+    "title": "နှစ် ၃+ အတွေ့အကြုံ ရှိသော Developer",
+    "description": "၁-၇-၁၉၉၉ နေ့ မွေးဖွားသည်။ သူငယ်ချင်းများ မင်းကောင်း ဟု ခေါ်သည်။ Mobile နှင့် Frontend ဖွံ့ဖြိုးတိုးတက်ရေးတွင် အထူးကျွမ်းကျင်သည်။",
+    "bio": "MCY တွင် Freelance Mobile Developer အဖြစ် အသက်မွေးဝမ်းကြောင်းကို စတင်ခဲ့သည်။ LMS နှင့် ဘာသာစကားသင်ယူ app များ တည်ဆောက်ခဲ့သည်။ Tech Breeze တွင် Director အဖြစ် Event Ticketing နှင့် Factory Management System များ တည်ဆောက်ခဲ့သည်။ ACE Data Systems တွင် FPB နှင့် SMEDB Mobile Banking app များ တည်ဆောက်ခဲ့သည်။ ယခု Yoma Fleet တွင် Plus+ platform — Golang Microservices ဖြင့် ဝန်ထမ်းများအတွက် Lease-to-buy program တည်ဆောက်နေသည်။ ၂၀၂၆ တွင် Golang, Python for AI, Server Management နှင့် CI/CD တွင် ပိုမိုကျွမ်းကျင်ရန် ရည်မှန်းသည်။",
+    "languages_title": "ကျွမ်းကျင်သော ဘာသာစကားများ",
+    "skills": {
+      "mobile_title": "Mobile ဖွံ့ဖြိုးတိုးတက်ရေး",
+      "mobile_desc": "React Native (CLI & Expo) ကို ကျွမ်းကျင်စွာ အသုံးပြုသည်။ App Store & Play Store တွင် app များ ထုတ်ဝေထားသည်။",
+      "frontend_title": "Frontend ဖွံ့ဖြိုးတိုးတက်ရေး",
+      "frontend_desc": "React, Next.js နှင့် TypeScript ဖြင့် Modern Web App များ တည်ဆောက်သည်။ Performance, Accessibility နှင့် UI design ကို အလေးထားသည်။",
+      "backend_title": "Backend နှင့် API",
+      "backend_desc": "Laravel, Node.js တွင် အတွေ့အကြုံ ရှိသည်။ Golang ကို လေ့လာနေသည်။ Microservices နှင့် RESTful API တည်ဆောက်သည်။",
+      "fullstack_title": "Full-Stack Integration",
+      "fullstack_desc": "Inertia.js, React Query နှင့် Redux, Zustand ကဲ့သို့ State Management များဖြင့် Frontend-Backend ချိတ်ဆက်မှု ပြုလုပ်သည်။"
+    }
+  },
+  "experience": {
+    "label": "အသက်မွေးဝမ်းကြောင်း",
+    "title": "လုပ်ဆောင်ခဲ့သော နေရာများ",
+    "description": "Freelance မှ Director အထိ၊ LMS app မှ Secure Banking System အထိ ဖန်တီးခဲ့သည်။",
+    "key_projects": "အဓိက ပရောဂျက်များ",
+    "period_current": "လက်ရှိ",
+    "period_prev": "ယခင်"
+  },
+  "projects": {
+    "label": "ပရောဂျက်များ",
+    "title": "တည်ဆောက်ခဲ့သော App နှင့် System များ",
+    "description": "App Store & Play Store တွင် Banking app များ၊ Admin Portal များနှင့် Enterprise Mobile Ecosystem များ ရှိသည်။",
+    "android": "Android",
+    "ios": "iOS",
+    "internal": "တွင်းပိုင်း / သီးသန့်",
+    "details": "အသေးစိတ်"
+  },
+  "stack": {
+    "label": "နည်းပညာ Stack",
+    "title": "အသုံးပြုသော ကိရိယာများ",
+    "description": "Mobile, Frontend, State Management နှင့် Backend တွင် ညီမျှသော ကျွမ်းကျင်မှု ရှိသည်။",
+    "levels": {
+      "expert": "ကျွမ်းကျင်",
+      "advanced": "ကောင်းမွန်",
+      "intermediate": "အကျွမ်းတဝင်",
+      "learning": "လေ့လာနေ"
+    }
+  },
+  "learning": {
+    "label": "၂၀၂၆ သင်ယူမှုလမ်းကြောင်း",
+    "title": "Full-Stack ဆီ ကြီးထွားနေသည်",
+    "description": "Backend ကျွမ်းကျင်မှု၊ AI Integration နှင့် DevOps တွင် ရင်းနှီးမြှုပ်နှံနေသည်။",
+    "blog_cta": "Learning Journal ဖတ်ရန်"
+  },
+  "business": {
+    "label": "ကိုယ်ပိုင်လုပ်ငန်း",
+    "title": "Invisigate Asia",
+    "description": "ငယ်ငယ်ရွယ်ရွယ် စီးပွားရေး အဖြစ် VPN Key များ ရောင်းချကာ ဒီဂျစ်တယ် ကိုယ်ရေးကာကွယ်မှု ဝန်ဆောင်မှုများ ပေးနေသည်။ အသုံးပြုသူများ ဒီဂျစ်တယ်လောကတွင် လုံခြုံစိတ်ချစွာ ဆက်သွယ်နိုင်ရေး ကူညီသည်။",
+    "cta": "Website သို့ သွားရန်"
+  },
+  "contact": {
+    "label": "ဆက်သွယ်ရန်",
+    "title": "အတူတကွ တည်ဆောက်ကြစို့",
+    "description": "ပရောဂျက် ရှိပြီး ဆွေးနွေးလိုသလား သို့မဟုတ် အခွင့်အလမ်းတစ်ခုခု ဆွေးနွေးလိုသလား? ဆက်သွယ်ဖို့ အဆင်သင့် ရှိပါသည်။",
+    "name": "သင်၏ နာမည်",
+    "email": "သင်၏ Email",
+    "subject": "ခေါင်းစဉ်",
+    "message": "မက်ဆေ့ဂျ်",
+    "name_placeholder": "ကိုကိုကြီး",
+    "email_placeholder": "example@gmail.com",
+    "subject_placeholder": "ပရောဂျက် ဆွေးနွေးချင်သည်",
+    "message_placeholder": "ပရောဂျက် ကစမ်းပြောပါ...",
+    "send": "မက်ဆေ့ဂျ် ပို့ရန်",
+    "sending": "ပို့နေသည်...",
+    "success": "မက်ဆေ့ဂျ် ရောက်ပြီ! မကြာမီ တုံ့ပြန်ပါမည်။",
+    "error": "တစ်ခုခု မှားယွင်းသွားသည်။ တစ်ဖန် ထပ်ကြိုးစားပါ သို့မဟုတ် Email ဆက်ရိုက်ပါ။",
+    "find_online": "Online တွင် တွေ့နိုင်သည်",
+    "alt_phone": "အရန် ဖုန်းနံပါတ်",
+    "location": "တည်နေရာ",
+    "phone": "ဖုန်းနံပါတ်"
+  },
+  "footer": {
+    "description": "Fintech, Enterprise နှင့် Education တွင် ဒီဂျစ်တယ် အတွေ့အကြုံများ ဖန်တီးနေသော Fullstack & Mobile Engineer။",
+    "quick_links": "အမြန် Links",
+    "more": "အခြား",
+    "learning_blog": "Learning Blog",
+    "built_with": "ဖြင့် တည်ဆောက်",
+    "back_to_top": "အပေါ်သို့ ↑",
+    "copyright": "© {year} {name}. Next.js ဖြင့် ❤ တည်ဆောက်သည်"
+  }
+}

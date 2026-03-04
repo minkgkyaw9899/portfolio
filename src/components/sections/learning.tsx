@@ -1,65 +1,93 @@
 "use client";
 
-import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  Code2,
+  Brain,
+  Server,
+  Workflow,
+  Sparkles,
+  ArrowRight,
+} from "lucide-react";
 import { FadeIn } from "@/components/ui/fade-in";
-import { getBlogPosts } from "@/lib/content";
+import { SectionHeading } from "@/components/ui/section-heading";
+import { LEARNING_GOALS_2026 } from "@/lib/constants";
+import { useLanguage } from "@/lib/i18n";
+
+const iconMap: Record<string, typeof Code2> = {
+  code: Code2,
+  brain: Brain,
+  server: Server,
+  workflow: Workflow,
+  sparkles: Sparkles,
+};
 
 export const Learning = () => {
-  const posts = getBlogPosts();
-
+  const { t } = useLanguage();
   return (
-    <section className="space-y-8 pt-20" id="learning">
+    <section className="section-spacing" id="learning">
       <FadeIn>
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <div className="space-y-3">
-            <p className="text-xs uppercase tracking-[0.35em] text-zinc-500">
-              Learning Path
-            </p>
-            <h2 className="text-3xl font-semibold text-zinc-50">
-              Documenting my Golang transition
-            </h2>
-            <p className="max-w-xl text-sm leading-6 text-zinc-400">
-              A transparent trail of lessons, experiments, and backend patterns
-              I am adopting while moving into fullstack delivery.
-            </p>
-          </div>
-          <Link
+        <SectionHeading
+          label={t("learning.label")}
+          title={t("learning.title")}
+          description={t("learning.description")}
+        />
+      </FadeIn>
+      <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {LEARNING_GOALS_2026.map((goal, i) => {
+          const Icon = iconMap[goal.icon] ?? Sparkles;
+          return (
+            <FadeIn key={goal.title} delay={i * 0.08}>
+              <motion.div
+                className="glass-card group h-full rounded-2xl p-6 transition-all hover:border-accent/30"
+                whileHover={{ y: -4 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              >
+                <div className="flex items-start justify-between">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-surface-elevated text-accent transition-colors group-hover:border-accent/30 group-hover:bg-accent/10">
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <span className="text-xs font-bold text-accent">
+                    {goal.progress}%
+                  </span>
+                </div>
+                <h3 className="mt-4 text-base font-bold text-foreground">
+                  {goal.title}
+                </h3>
+                <p className="mt-2 text-xs leading-5 text-muted">
+                  {goal.description}
+                </p>
+                <div className="mt-4">
+                  <div className="h-1.5 w-full overflow-hidden rounded-full bg-border">
+                    <motion.div
+                      className="h-full rounded-full bg-linear-to-r from-accent to-accent-light"
+                      initial={{ width: 0 }}
+                      whileInView={{ width: `${goal.progress}%` }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 1.2,
+                        delay: i * 0.1 + 0.3,
+                        ease: [0.25, 0.4, 0.25, 1],
+                      }}
+                    />
+                  </div>
+                </div>
+              </motion.div>
+            </FadeIn>
+          );
+        })}
+      </div>
+      <FadeIn delay={0.4}>
+        <div className="mt-8 flex justify-center">
+          <a
             href="/blog"
-            className="text-sm font-semibold text-orange-300 transition hover:text-orange-200"
+            className="group flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-accent-light"
           >
-            View learning posts →
-          </Link>
+            {t("learning.blog_cta")}
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </a>
         </div>
       </FadeIn>
-      <div className="grid gap-4 md:grid-cols-3">
-        {posts.map((post) => (
-          <FadeIn key={post.slug} className="h-full">
-            <div className="flex h-full flex-col gap-4 rounded-2xl border border-zinc-800/70 bg-zinc-900/50 p-6">
-              <div className="text-xs uppercase tracking-[0.3em] text-zinc-500">
-                {post.status}
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-lg font-semibold text-zinc-100">
-                  {post.title}
-                </h3>
-                <p className="text-sm leading-6 text-zinc-400">
-                  {post.summary}
-                </p>
-              </div>
-              <div className="mt-auto flex flex-wrap gap-2 text-xs text-zinc-500">
-                {post.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full border border-zinc-800 px-3 py-1"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </FadeIn>
-        ))}
-      </div>
     </section>
   );
 };

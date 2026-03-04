@@ -32,7 +32,18 @@ export type BlogPost = {
 const projects = projectsData as Project[];
 const blogPosts = blogData as BlogPost[];
 
+const SHOWCASE_SLUGS = [
+  "fpb-banking-suite",
+  "smedb-banking-suite",
+  "plus-financial-platform",
+];
+
 export const getProjects = () => projects;
+
+export const getShowcaseProjects = () =>
+  SHOWCASE_SLUGS.map((slug) => projects.find((p) => p.slug === slug)).filter(
+    Boolean,
+  ) as Project[];
 
 export const getFeaturedProjects = () =>
   projects.filter((project) => project.featured);

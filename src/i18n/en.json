@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "stack": "Stack",
+    "contact": "Contact",
+    "letsTalk": "Let's Talk"
+  },
+  "hero": {
+    "badge": "Available for work",
+    "roles": [
+      "Fullstack Engineer",
+      "Mobile Specialist",
+      "React Native Expert",
+      "Frontend Developer"
+    ],
+    "headline1": "Building",
+    "headline2": "Digital Experiences",
+    "headline3": "That Matter.",
+    "description": "{experience} years crafting mobile and web applications across fintech, enterprise, and education. Currently at {company}, building the Plus+ platform.",
+    "cta_primary": "View Projects",
+    "cta_secondary": "Get In Touch",
+    "stats": {
+      "years": "Years Experience",
+      "projects": "Projects Delivered",
+      "companies": "Companies Worked",
+      "technologies": "Technologies"
+    }
+  },
+  "about": {
+    "label": "About Me",
+    "title": "Passionate Developer with 3+ Years of Experience",
+    "description": "Born on July 1, 1999. My friends call me Min Kaung. I specialize in mobile and frontend development, continuously expanding into full-stack and backend technologies.",
+    "bio": "I started my career as a freelance mobile developer with MCY, building learning management systems and language apps. This foundation led me to Tech Breeze, where I became a director, building event ticketing and factory management systems. At ACE Data Systems, one of Myanmar's largest corporate companies, I architected secure mobile banking applications (FPB & SMEDB) that are live on both App Store and Play Store. Now at Yoma Fleet, I'm developing the Plus+ platform — a lease-to-buy employee benefit program powered by Golang microservices. In 2026, I'm expanding into Golang, Python for AI, server management, and CI/CD to level up my full-stack capabilities.",
+    "languages_title": "Languages I Speak",
+    "skills": {
+      "mobile_title": "Mobile Development",
+      "mobile_desc": "Expert in React Native (CLI & Expo) with apps published on App Store & Play Store. Specializing in fintech and enterprise mobile solutions.",
+      "frontend_title": "Frontend Development",
+      "frontend_desc": "Building modern web apps with React, Next.js, and TypeScript. Strong focus on performance, accessibility, and elegant user interfaces.",
+      "backend_title": "Backend & APIs",
+      "backend_desc": "Experience with Laravel, Node.js, and currently learning Golang. Building microservices and RESTful APIs for production systems.",
+      "fullstack_title": "Full-Stack Integration",
+      "fullstack_desc": "Bridging frontend and backend with tools like Inertia.js, React Query, and state management solutions (Redux, Zustand)."
+    }
+  },
+  "experience": {
+    "label": "Career Journey",
+    "title": "Where I've Made Impact",
+    "description": "From freelancing to directing, from building learning apps to crafting secure banking systems deployed to millions.",
+    "key_projects": "Key Projects",
+    "period_current": "Present",
+    "period_prev": "Previous"
+  },
+  "projects": {
+    "label": "Project Showcase",
+    "title": "Apps & Systems I've Built",
+    "description": "From banking apps on App Store & Play Store to admin portals and enterprise-grade mobile ecosystems.",
+    "android": "Android",
+    "ios": "iOS",
+    "internal": "Internal / Private",
+    "details": "Details"
+  },
+  "stack": {
+    "label": "Technology Stack",
+    "title": "Tools & Technologies I Use",
+    "description": "A balanced toolkit spanning mobile, frontend, state management, and backend — with new skills always in progress.",
+    "levels": {
+      "expert": "Expert",
+      "advanced": "Advanced",
+      "intermediate": "Familiar",
+      "learning": "Learning"
+    }
+  },
+  "learning": {
+    "label": "2026 Learning Path",
+    "title": "Growing Into Full-Stack",
+    "description": "Investing in backend mastery, AI integration, and DevOps skills to deliver complete solutions.",
+    "blog_cta": "Read my learning journal"
+  },
+  "business": {
+    "label": "Side Business",
+    "title": "Invisigate Asia",
+    "description": "As a small business venture, I sell VPN keys and provide digital privacy solutions through Invisigate Asia. Helping users stay secure and private in the digital world.",
+    "cta": "Visit Website"
+  },
+  "contact": {
+    "label": "Get In Touch",
+    "title": "Let's Build Something Together",
+    "description": "Have a project in mind or want to discuss opportunities? I'm always open to interesting conversations.",
+    "name": "Your Name",
+    "email": "Your Email",
+    "subject": "Subject",
+    "message": "Message",
+    "name_placeholder": "John Doe",
+    "email_placeholder": "john@example.com",
+    "subject_placeholder": "Project Discussion",
+    "message_placeholder": "Tell me about your project...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! I'll get back to you soon.",
+    "error": "Something went wrong. Please try again or email me directly.",
+    "find_online": "Find Me Online",
+    "alt_phone": "Alt Phone",
+    "location": "Location",
+    "phone": "Phone"
+  },
+  "footer": {
+    "description": "Fullstack & Mobile Engineer crafting digital experiences across fintech, enterprise, and education.",
+    "quick_links": "Quick Links",
+    "more": "More",
+    "learning_blog": "Learning Blog",
+    "built_with": "Built with",
+    "back_to_top": "Back to Top ↑",
+    "copyright": "© {year} {name}. Built with ❤ and Next.js"
+  }
+}
