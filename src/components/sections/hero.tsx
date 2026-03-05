@@ -169,9 +169,9 @@ export const Hero = () => {
         <div className="mesh-gradient-3 absolute bottom-20 left-1/2 h-[300px] w-[300px] -translate-x-1/2 rounded-full bg-amber-500/4 blur-[100px]" />
       </div> */}
 
-      <div className="relative z-10 flex flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
+      <div className="relative z-10 flex flex-col gap-8 lg:gap-12 lg:flex-row lg:items-center lg:justify-between px-4 sm:px-0">
         {/* Left */}
-        <div className="flex-1 space-y-8">
+        <div className="flex-1 space-y-6 sm:space-y-8">
           {/* Badge */}
           <div ref={badgeRef} className="opacity-0">
             <div className="inline-flex items-center gap-3 rounded-full border border-border bg-surface/50 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.2em] text-muted backdrop-blur-sm">
@@ -186,7 +186,7 @@ export const Hero = () => {
           {/* Headline */}
           <h1
             ref={headlineRef}
-            className="text-5xl font-bold leading-[1.08] text-foreground opacity-0 sm:text-6xl lg:text-7xl xl:text-8xl"
+            className="text-3xl font-bold leading-tight text-foreground opacity-0 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
           >
             {t("hero.headline1")}{" "}
             <span className="gradient-text">{t("hero.headline2")}</span>
@@ -261,7 +261,7 @@ export const Hero = () => {
         <div className="grid grid-cols-2 gap-4 rounded-2xl border border-border bg-surface/40 p-6 backdrop-blur-sm sm:grid-cols-4">
           {STATS.map((stat, i) => (
             <div key={stat.label} className="group text-center">
-              <p className="text-3xl font-bold text-foreground transition-colors group-hover:text-accent sm:text-4xl">
+              <p className="text-2xl font-bold text-foreground transition-colors group-hover:text-accent sm:text-3xl lg:text-4xl">
                 <AnimatedCounter value={stat.value} suffix={stat.suffix} />
               </p>
               <p className="mt-1 text-xs uppercase tracking-[0.18em] text-muted">

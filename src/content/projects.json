@@ -107,30 +107,55 @@
     "name": "Alpha Learn",
     "domain": "LMS",
     "summary": "Learning management system focused on structured lessons and student progress.",
-    "role": "Frontend Engineer",
-    "stack": ["React", "TypeScript", "Education Analytics"],
+    "role": "Mobile Developer (React Native CLI)",
+    "stack": ["React Native", "Redux", "Education Management"],
     "challenges": [
       "Progress tracking across curricula",
       "Engagement-focused UX"
     ],
     "outcomes": ["Improved learner retention via better progress visibility"],
     "image": "/projects/placeholder.svg",
-    "featured": true
+    "featured": true,
+    "company": "MCY",
+    "available": false,
+    "unavailableReason": "Not available to show"
+  },
+  {
+    "slug": "eps-topik-app",
+    "name": "EPS Topik Language Learning",
+    "domain": "Education",
+    "summary": "Korean EPS Topik language learning application with interactive quizzes, comprehensive curriculum, and progress tracking. Designed for Korean language schools in Yangon to help students prepare for the EPS-TOPIK examination.",
+    "role": "Mobile Developer (React Native CLI)",
+    "stack": ["React Native CLI", "Zustand", "React Query", "React Hook Form"],
+    "challenges": [
+      "Complex quiz scheduling and grading system",
+      "Real-time progress synchronization",
+      "Offline quiz data management"
+    ],
+    "outcomes": ["100+ students supported with structured Korean language curriculum"],
+    "image": "/projects/placeholder.svg",
+    "featured": false,
+    "company": "MCY",
+    "available": false,
+    "unavailableReason": "Not uploaded to store"
   },
   {
     "slug": "breeze-ticketing",
     "name": "Breeze Ticketing",
     "domain": "Events",
-    "summary": "Event e-ticketing system app (not available on store) with fast check-in workflows for live events.",
-    "role": "Frontend Engineer",
-    "stack": ["React", "Node.js", "Realtime Updates"],
+    "summary": "Event e-ticketing system app with fast check-in workflows for live events. Comprehensive solution for music festivals and concerts with online booking, digital tickets, and QR-based entry.",
+    "role": "Mobile & Frontend Developer",
+    "stack": ["Expo", "React Native", "Laravel", "PHP"],
     "challenges": [
       "High-concurrency check-in scenarios",
-      "Real-time update delivery"
+      "Real-time update delivery",
+      "Seamless ticket validation"
     ],
-    "outcomes": ["Reduced queue times during peak check-in"],
+    "outcomes": ["Reduced queue times during peak check-in", "Improved event management workflows"],
     "image": "/projects/placeholder.svg",
-    "featured": false,
-    "company": "Tech Breeze"
+    "featured": true,
+    "company": "Tech Breeze",
+    "available": false,
+    "unavailableReason": "Launching April 2026"
   }
 ]

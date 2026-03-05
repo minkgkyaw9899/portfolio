@@ -91,10 +91,10 @@ export const CustomCursor = () => {
 
   return (
     <>
-      {/* Lagging Ring */}
+      {/* Outer glow ring - follows with lag */}
       <motion.div
         aria-hidden="true"
-        className="pointer-events-none fixed left-0 top-0 z-[100] hidden rounded-full border border-accent/70 md:block mix-blend-normal"
+        className="pointer-events-none fixed left-0 top-0 z-[100] hidden rounded-full border border-accent/40 md:block mix-blend-screen"
         style={{
           x: springX,
           y: springY,
@@ -104,25 +104,20 @@ export const CustomCursor = () => {
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{
           opacity: isVisible ? 1 : 0,
-          scale: isHovering ? 1.5 : 1,
-          width: 36,
-          height: 36,
-          backgroundColor: isHovering
-            ? "rgba(249, 115, 22, 0.08)"
-            : "transparent",
+          width: isHovering ? 48 : 40,
+          height: isHovering ? 48 : 40,
         }}
         transition={{
-          width: { duration: 0.2 },
-          height: { duration: 0.2 },
-          backgroundColor: { duration: 0.2 },
-          scale: { type: "spring", stiffness: 300, damping: 20 },
+          width: { duration: 0.3 },
+          height: { duration: 0.3 },
+          opacity: { duration: 0.2 },
         }}
       />
 
-      {/* Responsive Dot */}
+      {/* Middle accent ring */}
       <motion.div
         aria-hidden="true"
-        className="pointer-events-none fixed left-0 top-0 z-[110] hidden rounded-full bg-accent shadow-[0_0_8px_rgba(249,115,22,0.8)] md:block mix-blend-normal"
+        className="pointer-events-none fixed left-0 top-0 z-[105] hidden rounded-full border-2 border-accent/50 md:block mix-blend-screen"
         style={{
           x: dotSpringX,
           y: dotSpringY,
@@ -132,12 +127,36 @@ export const CustomCursor = () => {
         initial={{ opacity: 0, scale: 0 }}
         animate={{
           opacity: isVisible ? 1 : 0,
-          scale: isHovering ? 0 : 1,
-          width: 6,
-          height: 6,
+          width: isHovering ? 32 : 24,
+          height: isHovering ? 32 : 24,
         }}
         transition={{
-          scale: { duration: 0.15 },
+          width: { duration: 0.25 },
+          height: { duration: 0.25 },
+          opacity: { duration: 0.15 },
+        }}
+      />
+
+      {/* Center dot */}
+      <motion.div
+        aria-hidden="true"
+        className="pointer-events-none fixed left-0 top-0 z-[110] hidden rounded-full bg-accent shadow-[0_0_12px_rgba(249,115,22,0.9)] md:block mix-blend-screen"
+        style={{
+          x: mouseX,
+          y: mouseY,
+          translateX: "-50%",
+          translateY: "-50%",
+        }}
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{
+          opacity: isVisible ? 1 : 0,
+          width: isHovering ? 4 : 8,
+          height: isHovering ? 4 : 8,
+        }}
+        transition={{
+          width: { duration: 0.15 },
+          height: { duration: 0.15 },
+          opacity: { duration: 0.1 },
         }}
       />
     </>

@@ -15,12 +15,21 @@ const projectGradients: Record<string, string> = {
     "bg-linear-to-br from-emerald-900/80 via-teal-700/40 to-green-600/30",
   "plus-financial-platform":
     "bg-linear-to-br from-accent/60 via-orange-700/40 to-amber-600/30",
+  "breeze-ticketing":
+    "bg-linear-to-br from-purple-900/80 via-pink-700/40 to-rose-600/30",
+  "eps-topik-app":
+    "bg-linear-to-br from-red-900/80 via-pink-700/40 to-orange-600/30",
+  "alpha-learn":
+    "bg-linear-to-br from-indigo-900/80 via-blue-700/40 to-cyan-600/30",
 };
 
 const projectIcons: Record<string, string> = {
   "fpb-banking-suite": "🏦",
   "smedb-banking-suite": "🏢",
   "plus-financial-platform": "💳",
+  "breeze-ticketing": "🎫",
+  "eps-topik-app": "🇰🇷",
+  "alpha-learn": "📚",
 };
 
 const ProjectCard = ({
@@ -50,6 +59,17 @@ const ProjectCard = ({
               {icon}
             </span>
           </div>
+          {/* Unavailable Badge */}
+          {project.available === false && (
+            <div className="absolute inset-0 flex items-center justify-center bg-background/40 backdrop-blur-sm">
+              <div className="text-center">
+                <div className="text-4xl mb-2">🔒</div>
+                <p className="text-sm font-semibold text-white">
+                  {project.unavailableReason || "Not Available"}
+                </p>
+              </div>
+            </div>
+          )}
           {/* Badges */}
           <div className="absolute left-4 top-4">
             <span className="rounded-lg border border-white/10 bg-black/40 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-white backdrop-blur-sm">
@@ -94,7 +114,7 @@ const ProjectCard = ({
           </div>
 
           {/* App store links */}
-          {project.appStoreLinks && (
+          {project.available !== false && project.appStoreLinks && (
             <div className="mt-auto flex items-center gap-2 border-t border-border pt-4">
               {project.appStoreLinks.android && (
                 <a
@@ -138,7 +158,7 @@ export const Projects = () => {
           description={t("projects.description")}
         />
       </FadeIn>
-      <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, i) => (
           <ProjectCard key={project.slug} project={project} index={i} />
         ))}

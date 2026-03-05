@@ -18,6 +18,10 @@ export type Project = {
   company?: string;
   /** App store links for published apps (non-case-study projects) */
   appStoreLinks?: { android?: string; ios?: string };
+  /** Whether the project is available on app stores (defaults to true) */
+  available?: boolean;
+  /** Reason why the project is unavailable */
+  unavailableReason?: string;
 };
 
 export type BlogPost = {
@@ -36,6 +40,9 @@ const SHOWCASE_SLUGS = [
   "fpb-banking-suite",
   "smedb-banking-suite",
   "plus-financial-platform",
+  "breeze-ticketing",
+  "eps-topik-app",
+  "alpha-learn",
 ];
 
 export const getProjects = () => projects;

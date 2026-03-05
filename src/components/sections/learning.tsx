@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   Code2,
   Brain,
@@ -79,13 +80,13 @@ export const Learning = () => {
       </div>
       <FadeIn delay={0.4}>
         <div className="mt-8 flex justify-center">
-          <a
+          <Link
             href="/blog"
             className="group flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-accent-light"
           >
             {t("learning.blog_cta")}
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </a>
+          </Link>
         </div>
       </FadeIn>
     </section>
